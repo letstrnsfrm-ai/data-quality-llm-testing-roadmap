@@ -15,29 +15,29 @@ Designed for **LLM Quality Architects**, **Data QA Engineers**, and **AI SecOps 
 
 ```mermaid
 flowchart TD
-    subgraph Data & Prompt Ingestion
-        D1[Day 1: Data Quality & Schema Audits] --> |Validated Tensors & Rows| G1[Schema Gates]
+    subgraph Sub1["Data and Prompt Ingestion"]
+        D1["Day 1: Data Quality and Schema Audits"] --> |"Validated Tensors and Rows"| G1["Schema Gates"]
     end
 
-    subgraph Evaluation & Grounding
-        G1 --> D2[Day 2: LLM-as-a-Judge Rubrics]
-        G1 --> D3[Day 3: RAG Retrieval & Faithfulness]
-        D2 --> |Multi-Grade Scoring| M1[Quality Index]
-        D3 --> |Faithfulness >= 0.80| M1
+    subgraph Sub2["Evaluation and Grounding"]
+        G1 --> D2["Day 2: LLM-as-a-Judge Rubrics"]
+        G1 --> D3["Day 3: RAG Retrieval and Faithfulness"]
+        D2 --> |"Multi-Grade Scoring"| M1["Quality Index"]
+        D3 --> |"Faithfulness min 0.80"| M1
     end
 
-    subgraph Security & Guardrails
-        M1 --> D4[Day 4: Adversarial Red-Teaming & Injections]
-        M1 --> D5[Day 5: PII, Safety & Toxicity Guardrails]
-        D4 --> |ASR < 5% Gate| G2[Security Perimeter]
-        D5 --> |Zero PII Leakage| G2
+    subgraph Sub3["Security and Guardrails"]
+        M1 --> D4["Day 4: Adversarial Red-Teaming and Injections"]
+        M1 --> D5["Day 5: PII, Safety and Toxicity Guardrails"]
+        D4 --> |"ASR max 5% Gate"| G2["Security Perimeter"]
+        D5 --> |"Zero PII Leakage"| G2
     end
 
-    subgraph Embeddings & Deployment
-        G2 --> D6[Day 6: Vector DB & Chunking Audits]
-        D6 --> |Recall@K >= 0.85| G3[Embedding Quality]
-        G3 --> D7[Day 7: ModelOps CI/CD Quality Gates]
-        D7 --> |Exit 0 / Block Deploy| PROD[Production Delivery]
+    subgraph Sub4["Embeddings and Deployment"]
+        G2 --> D6["Day 6: Vector DB and Chunking Audits"]
+        D6 --> |"Recall at K min 0.85"| G3["Embedding Quality"]
+        G3 --> D7["Day 7: ModelOps CI/CD Quality Gates"]
+        D7 --> |"Exit 0 / Block Deploy"| PROD["Production Delivery"]
     end
 ```
 
