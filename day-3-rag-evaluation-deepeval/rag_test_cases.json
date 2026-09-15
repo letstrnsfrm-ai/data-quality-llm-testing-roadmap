@@ -1,0 +1,29 @@
+{
+  "grounded_test_case": {
+    "question": "What is the token refresh timeout and idle session threshold in auth-v2?",
+    "contexts": [
+      "auth-v2 enforces a 15-minute idle session timeout and a 24-hour absolute token refresh expiration window.",
+      "All API sessions utilize Redis JSON stores for revocation tracking."
+    ],
+    "answer": "auth-v2 enforces a 24-hour absolute token refresh expiration window along with a 15-minute idle session timeout.",
+    "ground_truth": "In auth-v2, the absolute token refresh expiration is 24 hours and the idle session timeout is 15 minutes."
+  },
+  "hallucinated_test_case": {
+    "question": "What is the token refresh timeout in auth-v2?",
+    "contexts": [
+      "auth-v2 enforces a 15-minute idle session timeout and a 24-hour absolute token refresh expiration window."
+    ],
+    "answer": "In auth-v2, token refresh tokens are valid indefinitely for 90 days without expiration.",
+    "ground_truth": "The absolute token refresh expiration window is 24 hours."
+  },
+  "low_precision_test_case": {
+    "question": "How is user password hashing performed?",
+    "contexts": [
+      "Frontend styling uses Tailwind CSS and glassmorphism cards.",
+      "The database backup runs nightly at 02:00 UTC.",
+      "Password hashing uses Argon2id with a unique 16-byte cryptographically secure salt."
+    ],
+    "answer": "Passwords are hashed with Argon2id and a 16-byte salt.",
+    "ground_truth": "Passwords are secure using Argon2id with 16-byte salt."
+  }
+}

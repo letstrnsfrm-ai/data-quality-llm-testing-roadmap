@@ -1,0 +1,38 @@
+{
+  "valid_records": [
+    {
+      "id": "c7a9f8b2-1e4d-4a3b-9e2c-7b8f9a0c1d2e",
+      "username": "sarah_connor",
+      "email": "sarah.connor@sky-resilience.io",
+      "age": 34,
+      "prompt_token_count": 420,
+      "status": "active"
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+      "username": "alex_murphy",
+      "email": "a.murphy@detroit-sec.gov",
+      "age": 41,
+      "prompt_token_count": 890,
+      "status": "pending"
+    },
+    {
+      "id": "e5f6a7b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b",
+      "username": "deckard_rick",
+      "email": "deckard@replicant-eval.org",
+      "age": 38,
+      "prompt_token_count": 1250,
+      "status": "active"
+    }
+  ],
+  "corrupted_records": [
+    {
+      "id": "invalid-uuid-format-12345",
+      "username": "",
+      "email": "not-an-email-at-all",
+      "age": -5,
+      "prompt_token_count": null,
+      "status": "unauthorized_status"
+    }
+  ]
+}

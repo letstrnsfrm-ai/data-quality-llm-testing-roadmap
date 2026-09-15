@@ -1,0 +1,42 @@
+{
+  "documents": [
+    {
+      "id": "doc_auth_01",
+      "title": "OAuth2 Bearer Token Lifecycle",
+      "content": "OAuth2 bearer tokens authenticate stateless microservice requests. Access tokens expire after 15 minutes, requiring clients to execute a refresh token grant against the identity provider."
+    },
+    {
+      "id": "doc_db_02",
+      "title": "PostgreSQL Connection Pooling",
+      "content": "PostgreSQL connection pooling via PgBouncer optimizes database resource consumption. Max client connections are capped at 500, with transaction-level pooling reducing backend overhead."
+    },
+    {
+      "id": "doc_k8s_03",
+      "title": "Kubernetes Horizontal Pod Autoscaler",
+      "content": "The Kubernetes Horizontal Pod Autoscaler (HPA) continuously queries Prometheus CPU and memory utilization metrics to scale replica pods dynamically between 2 and 10 instances."
+    },
+    {
+      "id": "doc_sec_04",
+      "title": "Zero Trust Network Architecture",
+      "content": "Zero Trust network architecture mandates mutual TLS (mTLS) authentication and microsegmentation across all internal services, assuming perimeter network compromise."
+    }
+  ],
+  "queries": [
+    {
+      "query": "How does token refresh work in OAuth2?",
+      "expected_doc_id": "doc_auth_01"
+    },
+    {
+      "query": "What handles database connection pooling?",
+      "expected_doc_id": "doc_db_02"
+    },
+    {
+      "query": "How do pods scale based on CPU metrics in K8s?",
+      "expected_doc_id": "doc_k8s_03"
+    },
+    {
+      "query": "What is required for mutual TLS in zero trust networks?",
+      "expected_doc_id": "doc_sec_04"
+    }
+  ]
+}

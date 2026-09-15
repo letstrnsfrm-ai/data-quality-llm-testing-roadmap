@@ -1,0 +1,5 @@
+# Data Quality & AI/LLM Testing Reference Suite Dependencies
+# All core test suites can also run 100% offline out-of-the-box using the built-in test runner.
+pytest>=8.0.0
+pydantic>=2.5.0
+requests>=2.31.0
