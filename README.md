@@ -5,7 +5,7 @@
 [![Test Suite: 100% Passing](https://img.shields.io/badge/tests-passing-brightgreen.svg)]()
 [![Cost: $0.00 Offline First](https://img.shields.io/badge/cost-$0.00_offline-cyan.svg)]()
 
-A comprehensive, production-grade reference repository demonstrating hands-on Quality Engineering (QE) strategies for modern Large Language Model (LLM) and Generative AI applications. 
+Welcome to the official reference codebase for the **Data Quality & AI/LLM Testing** course track on [letustransform.com](https://www.letustransform.com) ([All QE Roadmaps](https://www.letustransform.com/roadmaps) · [QE Strategy Docs](https://www.letustransform.com/docs)).
 
 Designed for **LLM Quality Architects**, **Data QA Engineers**, and **AI SecOps Architects**, this repository implements 7 consecutive daily hands-on modules addressing data drift, automated rubric evaluations, RAG grounding, adversarial injection attacks, PII filtering, vector search recall, and ModelOps CI/CD regression gates.
 
@@ -45,15 +45,15 @@ flowchart TD
 
 ## 📅 7-Day Curriculum Overview
 
-| Day | Lab Directory | Focus Area | Core Tech & Strategy | Primary Assertion |
-| :---: | :--- | :--- | :--- | :--- |
-| **Day 1** | `day-1-data-quality-schema-auditing` | Shift-Left Data Quality | Great Expectations Pattern, Schema Checks, Null Bounds | Dataset validity == 100%, 0 format errors |
-| **Day 2** | `day-2-llm-judge-rubrics` | LLM-as-a-Judge | Structured JSON Rubrics, Chain-of-Thought Grading | Inter-annotator agreement >= 0.85 |
-| **Day 3** | `day-3-rag-evaluation-deepeval` | RAG Evaluation & Grounding | DeepEval / Ragas Metrics, Context Precision/Recall | Faithfulness >= 0.80, Relevancy >= 0.75 |
-| **Day 4** | `day-4-red-teaming-prompt-injection` | Adversarial Security | Jailbreak Detectors, DAN/Roleplay Attack Harness | Attack Success Rate (ASR) < 5% |
-| **Day 5** | `day-5-pii-safety-guardrails` | Privacy & Safety Filtering | Regex/Token Redaction, Toxicity Guardrails | 0 plaintext PII leaks, 100% toxic catch |
-| **Day 6** | `day-6-vectordb-embedding-audits` | Vector DB & Embedding Recall | In-Memory Vector Store, Cosine Similarity, Overlap | Top-K Recall@3 >= 0.85 |
-| **Day 7** | `day-7-modelops-cicd-gates` | ModelOps CI/CD Automation | Unified Eval Gate, SARIF/JSON Reports, GitHub Actions | Quality Index >= 0.80 -> Exit 0 |
+| Day | Lab Directory | Focus Area | Core Tech & Strategy | Primary Assertion | Interactive Playbook |
+| :---: | :--- | :--- | :--- | :--- | :---: |
+| **Day 1** | [`day-1-data-quality-schema-auditing`](./day-1-data-quality-schema-auditing/) | Shift-Left Data Quality | Great Expectations Pattern, Schema Checks, Null Bounds | Dataset validity == 100%, 0 format errors | [Day 1 Playbook](https://www.letustransform.com/episodes/llm-day-1) |
+| **Day 2** | [`day-2-llm-judge-rubrics`](./day-2-llm-judge-rubrics/) | LLM-as-a-Judge | Structured JSON Rubrics, Chain-of-Thought Grading | Inter-annotator agreement >= 0.85 | [Day 2 Playbook](https://www.letustransform.com/episodes/llm-day-2) |
+| **Day 3** | [`day-3-rag-evaluation-deepeval`](./day-3-rag-evaluation-deepeval/) | RAG Evaluation & Grounding | DeepEval / Ragas Metrics, Context Precision/Recall | Faithfulness >= 0.80, Relevancy >= 0.75 | [Day 3 Playbook](https://www.letustransform.com/episodes/llm-day-3) |
+| **Day 4** | [`day-4-red-teaming-prompt-injection`](./day-4-red-teaming-prompt-injection/) | Adversarial Security | Jailbreak Detectors, DAN/Roleplay Attack Harness | Attack Success Rate (ASR) < 5% | [Day 4 Playbook](https://www.letustransform.com/episodes/llm-day-4) |
+| **Day 5** | [`day-5-pii-safety-guardrails`](./day-5-pii-safety-guardrails/) | Privacy & Safety Filtering | Regex/Token Redaction, Toxicity Guardrails | 0 plaintext PII leaks, 100% toxic catch | [Day 5 Playbook](https://www.letustransform.com/episodes/llm-day-5) |
+| **Day 6** | [`day-6-vectordb-embedding-audits`](./day-6-vectordb-embedding-audits/) | Vector DB & Embedding Recall | In-Memory Vector Store, Cosine Similarity, Overlap | Top-K Recall@3 >= 0.85 | [Day 6 Playbook](https://www.letustransform.com/episodes/llm-day-6) |
+| **Day 7** | [`day-7-modelops-cicd-gates`](./day-7-modelops-cicd-gates/) | ModelOps CI/CD Automation | Unified Eval Gate, SARIF/JSON Reports, GitHub Actions | Quality Index >= 0.80 -> Exit 0 | [Day 7 Playbook](https://www.letustransform.com/episodes/llm-day-7) |
 
 ---
 
